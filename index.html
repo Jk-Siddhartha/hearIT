@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="screen">
+        <div class="header">
+          <img src="./images/music.png" alt="" class="logo" />
+          <h2>ᕼᗴᗩᖇᎥ丅</h2>
+        </div>
+        <input
+          type="file"
+          name="file"
+          id="folder"
+          webkitdirectory
+          directory
+          multiple
+        />
+        <div class="music-display">
+          <i class="fa-solid fa-list list-btn"></i>
+          <img
+            src="https://media.istockphoto.com/vectors/radial-sound-wave-curve-with-light-particles-colorful-equalizer-vector-id1142550180?k=20&m=1142550180&s=612x612&w=0&h=pLzVr57p2IAgOz6CGWW_IyyJvW8l-NOKce7y-vn9d2k="
+            alt=""
+            class="display-img"
+          />
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="music-list">
+            <i class="fa-solid fa-list close-list-btn"></i>
+            <div class="list"></div>
+          </div>
+        </div>
+        <audio id="myAudio">
+          <source src="" />
+        </audio>
+        <div class="footer">
+          <i class="fa-solid fa-caret-left"></i>
+          <i class="fa-solid fa-play play-btn"></i>
+          <i class="fa-solid fa-caret-right"></i>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

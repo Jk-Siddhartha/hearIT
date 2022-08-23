@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+p {
+  cursor: pointer;
+}
+
+.main-div {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://media.istockphoto.com/vectors/harmonic-spectrum-sound-waves-vector-id1213779537?k=20&m=1213779537&s=612x612&w=0&h=dxY-wDP-GV1ZiAvtR5k22DJ90yA_9BvF3GWod_-xCv0=");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.screen {
+  width: 350px;
+  height: 85vh;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  position: relative;
+}
+
+.header {
+  background-color: rgba(255, 255, 0, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 5% 8%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 15%;
+  cursor: pointer;
+}
+
+.header h2 {
+  cursor: pointer;
+  color: #eb4d4b;
+  text-shadow: 2px 2px 2px #f0932b;
+}
+
+/* input {
+  display: inline-block;
+  width: 100%;
+  padding: 120px 0 0 0;
+  height: 100px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("./images/bottom.png") center center no-repeat #e4e4e4;
+  background-size: 100% 100% contain;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+} */
+
+input {
+  display: none;
+}
+
+.fa-moon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.music-display {
+  width: 100%;
+  height: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.list-btn {
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 17px;
+  cursor: pointer;
+  background: #fff;
+  padding: 1.5% 4%;
+}
+
+.close-list-btn {
+  font-size: 17px;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+  padding: 1.5% 4%;
+}
+
+.music-list {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  background: #fff;
+  z-index: 99;
+  /* border: 1px solid red; */
+}
+
+.list {
+  overflow-y: scroll;
+  padding: 2% 3%;
+  width: 100%;
+  height: 90%;
+}
+
+.list p {
+  padding: 2% 2% 0 2%;
+}
+
+.display-img {
+  width: 50%;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.wave {
+  width: 45%;
+  height: 60%;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+}
+
+.wave:nth-child(3) {
+  transform: rotate(35deg);
+  animation: anim1 5s linear infinite;
+  background: rgba(0, 0, 255, 0.3);
+}
+
+.wave:nth-child(4) {
+  transform: rotate(90deg);
+  animation: anim2 5s linear infinite;
+  background: rgba(0, 0, 255, 0.355);
+}
+
+.wave:nth-child(5) {
+  transform: rotate(140deg);
+  animation: anim3 5s linear infinite;
+  background: rgba(0, 0, 255, 0.39);
+}
+
+@keyframes anim1 {
+  0% {
+    transform: rotate(35deg);
+  }
+  100% {
+    transform: rotate(395deg);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes anim3 {
+  0% {
+    transform: rotate(140deg);
+  }
+  100% {
+    transform: rotate(500deg);
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 4% 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+
+.footer i {
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer i:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.footer i:nth-child(1) {
+  font-size: 30px;
+  padding: 2.5% 4.5%;
+}
+
+.footer i:nth-child(2) {
+  font-size: 25px;
+  padding: 3.5% 4%;
+}
+
+.footer i:nth-child(3) {
+  font-size: 30px;
+  padding: 2.5% 4.5%;
+}
+
+.rod {
+  width: 20px;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.box {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+}
